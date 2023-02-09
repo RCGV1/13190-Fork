@@ -67,7 +67,7 @@ A : telemetry encoder values
         } else if(gamepad1.b){ //Position testing
             slideRight.setTargetPosition(TestHeight);
             slideRight.setTargetPosition(TestHeight);
-
+            telemetry.addData(10,"5");
         } else{
             slideRight.setPower(0);
             slideLeft.setPower(0);
