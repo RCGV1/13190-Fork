@@ -32,16 +32,4 @@ jobs:
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       with:
         arguments: build
- 
- - name: Send failure message
-      if: failure()
-      uses: rtCamp/action-send-message@v1
-      with:
-        github_token: ${{ secrets.SECRET_API_KEY }}
-        message: |
-          Hi @{{github.actor}},
-          
-          The Gradle build failed for your recent commit. Please fix the issue and push the changes.
-
-        receivers:
-          - ${{ github.event.head_commit.author.email }}
+        
