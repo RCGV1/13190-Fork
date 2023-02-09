@@ -42,6 +42,3 @@ jobs:
       with:
         content: |
           Build failed: Java project with Gradle
-
-          Commit: ${{github.sha}}
-          Author: ${{github.actor}}
