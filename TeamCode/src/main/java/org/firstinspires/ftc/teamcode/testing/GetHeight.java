@@ -78,11 +78,9 @@ A : telemetry encoder values
             telemetry.addData("SlideR pos", slideRight.getCurrentPosition());
             telemetry.addData("SlideL pos", slideLeft.getCurrentPosition());
             telemetry.update();
+            telemetry.addData(10,);
         }
 
-        if (gamepad1.c){
-            telemetry.addData("SlideR pos", slideRight.getCurrentPosition());
-        }
 
     }
 
