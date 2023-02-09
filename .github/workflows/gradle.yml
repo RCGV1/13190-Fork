@@ -40,5 +40,4 @@ jobs:
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
-        content: |
-          Build failed: Java project with Gradle
+        args: 'Build has failed'
