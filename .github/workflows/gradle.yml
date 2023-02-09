@@ -40,4 +40,4 @@ jobs:
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
-        args: ' :exclamation:  Build has failed in commit "${{ github.sha }}".'
+        args: ' :exclamation:  Build has failed in commit "${{ github.event.head_commit.message }}"'
