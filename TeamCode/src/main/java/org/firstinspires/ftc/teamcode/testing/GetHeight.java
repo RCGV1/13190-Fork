@@ -78,7 +78,7 @@ A : telemetry encoder values
             telemetry.addData("SlideR pos", slideRight.getCurrentPosition());
             telemetry.addData("SlideL pos", slideLeft.getCurrentPosition());
             telemetry.update();
-
+            telemetry.addData(10,"5"); //for Fail
         }
 
 
