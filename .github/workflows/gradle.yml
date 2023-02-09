@@ -32,4 +32,16 @@ jobs:
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       with:
         arguments: build
-        
+   
+   
+    - name: Send Discord message on failure
+      if: failure()
+      uses: Ilshidur/action-discord@0.3.2
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      with:
+        content: |
+          Build failed: Java project with Gradle
+
+          Commit: ${{github.sha}}
+          Author: ${{github.actor}}
