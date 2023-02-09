@@ -59,6 +59,7 @@ A : telemetry encoder values
         if(gamepad1.dpad_down){
             slideRight.setPower(-speed);
             slideLeft.setPower(-speed);
+            telemetry.addData("10");
         }
 
         else if(gamepad1.dpad_up){

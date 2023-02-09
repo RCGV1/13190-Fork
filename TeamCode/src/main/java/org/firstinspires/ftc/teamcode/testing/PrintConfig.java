@@ -25,7 +25,7 @@ public class PrintConfig extends LinearOpMode {
             throw new RuntimeException("SD CARD NOT FOUND /sdcard/FIRST/mechbot.xml");
         }
 //        while(file.hasNext()) {
-             c = file.next(); //test
+             c = file.next();
              if (c == "next="){
 //             }
 
